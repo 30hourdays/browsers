@@ -1,0 +1,48 @@
+// Featherlight lightbox
+.featherlight {
+    width: 100%;
+    
+    .featherlight-content {
+        width: 80% !important;
+        background: transparent !important;
+        padding: 0 !important;
+        border: 0 !important;
+        margin: 0 !important;
+        max-height: unset !important;
+    }
+}
+
+// Section 1
+#wwwTable {
+    display: none;
+
+    &.featherlight-inner {
+        display: block;
+
+        table {
+            background: rgba(146, 0, 117, 0.5);
+            margin: 2rem 0;
+        }
+        table, th, td {
+            border: 1px solid $white !important;
+            border-collapse: collapse;
+            vertical-align: top;
+
+            pre {
+                margin: 2rem;
+            }
+        }
+        th {
+            padding: 0 4rem;
+        }
+    }
+}
+
+// Section 4
+#warTimeline {
+    display: none;
+
+    &.featherlight-inner {
+        display: block;
+    }
+}

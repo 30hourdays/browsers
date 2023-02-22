@@ -1,0 +1,27 @@
+// Colors
+$white: #FFF;
+$black: #000;
+
+// Outrun color palette lifted from reddit:  https://i.redd.it/aepphltiqy911.png
+$darkestPurp: #241734;
+$darkPurp: #261447;
+$purple: #541388;
+$maroon: #920075;
+$blue: #023788;
+$red: #FD1D53;
+$pink: #F6019D;
+$orange: #ff6C11;
+$yellow: #F9C80E;
+$hotPink: #F706CF;
+$cyan: #2DE2E6;
+$cyanBright: #40ddff;
+
+// Elliptical gradients
+$ellipse1: linear-gradient(45deg, $purple 0%, $hotPink 100%);
+$ellipse2: linear-gradient(45deg, $purple 0%, $hotPink 100%);
+$ellipse3: linear-gradient(45deg, $purple 0%, $yellow 100%);
+$ellipse4: linear-gradient(45deg, $purple 0%, $red 100%);
+$ellipse5: linear-gradient(45deg, $purple 0%, $pink 100%);
+$ellipse6: linear-gradient(45deg, $purple 0%, $blue 100%);
+$ellipse7: linear-gradient(45deg, $purple 0%, $orange 100%);
+$ellipse8: linear-gradient(45deg, $purple 0%, $hotPink 100%);

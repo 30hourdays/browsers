@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+        <title>Browser City</title>
+    </head>
+
+    <body data-spy="scroll" data-target="#navbar">
+
+        <!--<label class="switch-label">
+            <input type="checkbox" class="switch">
+            <span class="slider round"></span>
+        </label>
+
+        <article class="os-terminal-wrapper">
+            <main id="terminalMain" class="os-terminal-content">
+                <div class="static-intro">
+                    <p>•&nbsp;============================================:&nbsp;~~~&nbsp;•&nbsp;~~~&nbsp;:=============================================&nbsp;•<br>
+                        ||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+                        ||&nbsp;&nbsp;&nbsp;&nbsp;___&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;______&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+                        ||&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;__&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+                        ||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;/&nbsp;&nbsp;\&nbsp;&nbsp;/&nbsp;&nbsp;/&nbsp;___&nbsp;&nbsp;|&nbsp;|__&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|_)&nbsp;&nbsp;)&nbsp;____&nbsp;&nbsp;&nbsp;___&nbsp;&nbsp;__&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__&nbsp;&nbsp;____&nbsp;&nbsp;&nbsp;___&nbsp;&nbsp;&nbsp;____&nbsp;&nbsp;&nbsp;____&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+                        ||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;\/&nbsp;&nbsp;&nbsp;&nbsp;\/&nbsp;&nbsp;/&nbsp;/&nbsp;,_\&nbsp;|&nbsp;&nbsp;_&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;<&nbsp;|&nbsp;&nbsp;__|&nbsp;/&nbsp;_&nbsp;\&nbsp;\&nbsp;\&nbsp;&nbsp;__&nbsp;&nbsp;/&nbsp;/ /&nbsp;___|&nbsp;/&nbsp;,_\&nbsp;|&nbsp;&nbsp;__|&nbsp;/ ___|&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+                        ||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;/\&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;(&nbsp;(___&nbsp;|&nbsp;(_)&nbsp;)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|_)&nbsp;&nbsp;)|&nbsp;|&nbsp;&nbsp;&nbsp;(&nbsp;(_)&nbsp;)&nbsp;\&nbsp;\/&nbsp;&nbsp;\/&nbsp;/&nbsp;&nbsp;\___&nbsp;\(&nbsp;(___&nbsp;|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;\___&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+                        ||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\__/&nbsp;&nbsp;\__/&nbsp;&nbsp;&nbsp;\___/&nbsp;|____/&nbsp;&nbsp;&nbsp;&nbsp;|______/&nbsp;|_|&nbsp;&nbsp;&nbsp;&nbsp;\___/&nbsp;&nbsp;&nbsp;\__/\__/&nbsp;&nbsp;&nbsp;|____/&nbsp;\___/&nbsp;|_|&nbsp;&nbsp;&nbsp;&nbsp;|____/&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+                        ||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+                        ||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- An Elective&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+                        ||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<br>
+                        •&nbsp;============================================:&nbsp;~~~&nbsp;•&nbsp;~~~&nbsp;:=============================================&nbsp;•<br>
+                        <br>
+                        <p>Type 'begin' to...well...begin.</p>
+                    </p>
+                </div>
+                <div class="dynamic-content">
+                    <span class="prompt-icon">></span>
+                    <input type="text" id="osTerminalInput" onkeydown="if(event.keyCode == 13){ osTerminal()}"/>
+                    <hr>
+                    <div class="output-container">
+                        <textarea id="osTerminalOutput" onkeyup="if(event.target.value == 'fancy math' && event.key === 'Enter')" readonly autofocus></textarea>
+                        <div class="flux-capacitor hidden">
+                            &nbsp;__________________________________________<br>
+                            /&nbsp;&nbsp;______________________________________&nbsp;&nbsp;\<br>
+                            |&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___________________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;___&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;/&nbsp;<u>&nbsp;&nbsp;\</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>/&nbsp;&nbsp;</u>&nbsp;\&nbsp;\&nbsp;&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;&nbsp;/&nbsp;|&nbsp;<span class="red-node">(&#9673;)</span><span class="glow">&nbsp;\</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">/&nbsp;</span><span class="red-node">(&#9673;)</span>&nbsp;|&nbsp;\&nbsp;&nbsp;|&nbsp;|<br>
+                                |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;\<span class="red-node">|<span>&nbsp;</span>|</span><span class="glow">\<i>'</i>\</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">/<em>'</em>/</span><span class="red-node">|<span>&nbsp;</span>|</span>/&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-node"><u>|<span>&nbsp;</span>|</u></span>&nbsp;<span class="glow">\&nbsp;\</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">/&nbsp;/</span>&nbsp;<u><span class="red-node">|<span>&nbsp;</span>|</span></u>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                                |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|\|&nbsp;&nbsp;<span class="glow">\<i>'</i>\</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">/<em>'</em>/</span>&nbsp;&nbsp;|\|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|\|&nbsp;&nbsp;&nbsp;<span class="glow">\&nbsp;\</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">/&nbsp;/</span>&nbsp;&nbsp;&nbsp;|\|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                                |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|\|&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">\<i>'</i>\</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">/<em>'</em>/</span>&nbsp;&nbsp;&nbsp;&nbsp;|\|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">\&nbsp;\</span>&nbsp;&nbsp;&nbsp;<span class="glow">/&nbsp;/</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|\|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                                |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">\<i><u>'</u></i>)</span>_<span class="glow">(<u><em>'</em></u>/</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|\|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;(_)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">(')</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(_)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">|&nbsp;|</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">|'|</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">|&nbsp;|</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">|'|</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">|&nbsp;|</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">|'|</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glow">|&nbsp;|</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<span class="glow">|<u>'|</span>\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<span class="red-node">(<u>&#9635;&#9635;&#9635;&#9635;|</span>-&nbsp;&nbsp;-&nbsp;&nbsp;-</u>)&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<u>&nbsp;&nbsp;&nbsp;</u>/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\__________________________/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|<br>
+                            |&nbsp;|______________________________________|&nbsp;|<br>
+                            \__________________________________________/<br>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div id="warpSpeed">
+                <div id="rays">
+                    <div id="r0" class="ray">
+                        <div class="rayFill"></div>
+                    </div>
+                </div>
+              
+                <div id="center"></div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+        </article>-->
+
+        <div class="wrapper">
+             <!--INTRO -->
+            <article class="intro" id="intro">
+                <div class="tint">
+                    <div class="grain"></div>
+                </div>
+                <div class="intro__container">
+                    <div class="intro__card">
+                        <h1>Welcome to 1993</h1>
+                        <h2>Just like you remember it</h2>
+                        <div class="divider">
+                            <div class="divider__wrapper">
+                                <div class="line short"></div>
+                                <div class="line short"></div>
+                                <div class="line long"></div>
+                            </div>
+                            <div class="long"></div>
+                            <div class="angled-wrapper">
+                                <div class="angled"></div>
+                            </div>
+                            <div class="short"></div>
+                        </div>
+                        <p>A lot was going on in the world in 1993:</p>
+                        <input onclick="this.value='Another'" type="button" value="Show Me" id="eventButton" class="cyber-button"></input>
+                        <ul id="worldEvents"></ul>
+                    </div>
+                    <div class="intro__button">
+                        <a id="startThings" class="btn lighter" href="#timeline"><span>And there was another thing</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="timeline-container" id="timeline">
+
+                <!-- NAV -->
+                <nav class="nav__wrapper" id="navbar">
+                    <ul class="nav">
+
+                        <li role="presentation">
+                            <a href="#section1">
+                                <span class="nav__counter">01</span>
+                                <h3 class="nav__title">MARRIAGE</h3>
+                                <p class="nav__body">1990-1993</p>
+                            </a>
+                        </li>
+
+                        <li role="presentation">
+                            <a href="#section2">
+                                <span class="nav__counter">02</span>
+                                <h3 class="nav__title">CHILDREN</h3>
+                                <p class="nav__body">1993-1995</p>
+                            </a>
+                        </li>
+
+                        <li role="presentation">
+                            <a href="#section3">
+                                <span class="nav__counter">03</span>
+                                <h3 class="nav__title">DIVORCE</h3>
+                                <p class="nav__body">1995</p>
+                            </a>
+                        </li>
+                        
+                        <li role="presentation">
+                            <a href="#section4">
+                                <span class="nav__counter">04</span>
+                                <h3 class="nav__title">CUSTODY</h3>
+                                <p class="nav__body">1995-late 90s</p>
+                            </a>
+                        </li>
+                        
+                        <li role="presentation">
+                            <a href="#section5">
+                                <span class="nav__counter">05</span>
+                                <h3 class="nav__title">SINGLE LIFE</h3>
+                                <p class="nav__body">2001-2007</p>
+                            </a>
+                        </li>
+                        
+                        <li role="presentation">
+                            <a href="#section6">
+                            <span class="nav__counter">06</span>
+                            <h3 class="nav__title">TRAVEL</h3>
+                            <p class="nav__body">
+                                2007 -
+                            </p>
+                            </a>
+                        </li>
+                        
+                        <li role="presentation">
+                            <a href="#section7">
+                            <span class="nav__counter">07</span>
+                            <h3 class="nav__title">these days</h3>
+                            <p class="nav__body">
+                                <strong>code evolves; leaderboards don't</strong><br>
+                                ? - 2023
+                            </p>
+                            </a>
+                        </li>
+                        
+                        <li role="presentation">
+                            <a href="#section8">
+                            <span class="nav__counter">08</span>
+                            <h3 class="nav__title">onward</h3>
+                            <p class="nav__body">
+                                <strong>the future freaks me out</strong><br>
+                                2023 - ???
+                            </p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <aside class="hit-counter">
+                    <p># of people online</p>
+                    <div class="counter">
+                        <span></span>
+                    </div>
+                </aside>
+
+                <section class="section section1" id="section1">
+                    <div class="section-content">
+                        <h2>Time traveller's recap:</h2>
+                        <div class="divider">
+                            <div class="divider__wrapper">
+                                <div class="line short"></div>
+                                <div class="line short"></div>
+                                <div class="line long"></div>
+                            </div>
+                            <div class="long"></div>
+                            <div class="angled-wrapper">
+                                <div class="angled"></div>
+                            </div>
+                            <div class="short"></div>
+                        </div>
+                        <p>In the beginning, there is Mosaic. Or at least this is the beginning for most of the public. It's <span class="emph__orange">1990</span>, three years before Mosiac's official launch, the Internet is largely private to research facilities & the military, it looks different for every method of access, & there is only 'WorldWideWeb' (WWW). Or at least as far as our future ideas of browsers are concerned. Built by CERN - the nuclear research agency behind the Large Hadron Collider of the future - WWW is officially released to the public.</p>
+                        <p>What's all the fuss? Well, imagine leaping from command lines & specialized, inconsistent text tools, to an all-in-one solution utilizing the simple power of WYSIWYG.</p>
+                        <div class="inline">
+                            <p>Behold the glory:</p>
+                            <a class="icon" href="https://www.w3.org/MarkUp/tims_editor" data-featherlight="image">
+                                <svg id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.354 231.631C512.97 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-102.556 0-192.091-54.701-240-136 44.157-74.933 123.677-127.27 216.162-135.007C273.958 131.078 280 144.83 280 160c0 30.928-25.072 56-56 56s-56-25.072-56-56l.001-.042C157.794 179.043 152 200.844 152 224c0 75.111 60.889 136 136 136s136-60.889 136-136c0-31.031-10.4-59.629-27.895-82.515C451.704 164.638 498.009 205.106 528 256c-47.908 81.299-137.444 136-240 136z"/></svg>
+                            </a>
+                        </div>
+                        <p>It's <span class="emph__orange">1991</span> now, & HTML itself is only <em>mentioned</em> on the Intenet by one of the CERN bigwigs, then floats about in the ether while other developments are made. The most notable is an early version of WWW called 'ViolaWWW'. It sees it's release in <span class="emph__orange">1992</span> as the first browser to utilize scripting, stylesheets, & tables. Fun fact: as of November of 1992, there are a total of 26 websites in existence. ViolaWWW is only built only for the X Window System (no relation to Windows or Microsoft), which leads to it's quick demise.</p>
+                        <div class="inline">
+                            <p>Here's an example of what you'd be working with in Viola & what it looked like:</p>
+                            <a class="icon" href="#" data-featherlight="#wwwTable">
+                                <svg id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.354 231.631C512.97 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-102.556 0-192.091-54.701-240-136 44.157-74.933 123.677-127.27 216.162-135.007C273.958 131.078 280 144.83 280 160c0 30.928-25.072 56-56 56s-56-25.072-56-56l.001-.042C157.794 179.043 152 200.844 152 224c0 75.111 60.889 136 136 136s136-60.889 136-136c0-31.031-10.4-59.629-27.895-82.515C451.704 164.638 498.009 205.106 528 256c-47.908 81.299-137.444 136-240 136z"/></svg>
+                            </a>
+                            <div id="wwwTable">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <h3>A viola-style stylesheet</h3>
+                                            </th>
+                                            <th>
+                                                <h3>A modern CSS stylesheet</h3>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <pre>(BODY,INPUT,P   FGColor=black
+                            BGColor=grey70
+                            BDColor=grey70
+                            align=left
+
+            (H1             FGColor=white
+                            BGColor=red
+                            BDColor=black
+                            align=center</pre>
+                                            </td>
+                                            <td>
+                                                <pre>body, input, p {
+                color: black;
+                background-color: #707070;
+                text-align: left;
+            }
+
+            h1 {
+                color: white;
+                background-color: red;
+                border: solid 1px black;
+                text-align: center;
+            }</pre>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a class="icon" href="https://technirvanaa.files.wordpress.com/2011/04/2.jpg" data-featherlight="image">
+                                <svg id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.354 231.631C512.97 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-102.556 0-192.091-54.701-240-136 44.157-74.933 123.677-127.27 216.162-135.007C273.958 131.078 280 144.83 280 160c0 30.928-25.072 56-56 56s-56-25.072-56-56l.001-.042C157.794 179.043 152 200.844 152 224c0 75.111 60.889 136 136 136s136-60.889 136-136c0-31.031-10.4-59.629-27.895-82.515C451.704 164.638 498.009 205.106 528 256c-47.908 81.299-137.444 136-240 136z"/></svg>
+                            </a>
+                        </div>
+                        <p>Welcome to April of <span class="emph__orange">1993</span>! WWW's souce code has been released to the pubic & has been updated under the new name 'Nexus'. It's now capable of basic stylesheets (thanks Viola!), downloading & opening files with supported MIME types (movies, sounds, etc.), browsing newstroups, spellchecking, using protocols such as FTP & HTTP, & can even display inline images! Despite all this, it quickly falls beneath the shadow of Mosaic.</p>
+                        <div class="inline">
+                            <p>Here's a slick emulator of WorldWideWeb if you're feeling ungrateful for modern CSS:</p>
+                            <a class="icon" href="https://worldwideweb.cern.ch/browser/#https://worldwideweb.cern.ch/browser/default.html" target="_blank">
+                                <svg id="link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section2" id="section2">
+                    <div class="section-content">
+                        <h2>Mosaic, Cello, & Netscape</h2>
+                        <div class="divider">
+                            <div class="divider__wrapper">
+                                <div class="line short"></div>
+                                <div class="line short"></div>
+                                <div class="line long"></div>
+                            </div>
+                            <div class="long"></div>
+                            <div class="angled-wrapper">
+                                <div class="angled"></div>
+                            </div>
+                            <div class="short"></div>
+                        </div>
+                        <p>It's still April of <span class="emph__orange">1993</span>, & the public - knowing next to nothing of WorldWideWeb - is ravenous for a browser, but they don't know it yet. Mosaic is released & the world whets their palates, that is, everyone not using Windows 3.1, which runs on PCs that aren't powerful enough to run Mosaic.</p>
+                        <p>Windows users don't have to wait long as Cello is released in June. Originally created for lawyers - <em>by</em> lawyers - Cello was lauded for its simple interface, relatively low system requirements, & didn't require a TCP/IP stack to install. But in November Mosaic is released for Windows, & Cello falls into the archive of "historical browsers".</p>
+                        <div class="inline">
+                            <p>Cello in action:</p>
+                            <a class="icon" href="https://technirvanaa.files.wordpress.com/2011/04/3.jpg" data-featherlight="image">
+                                <svg id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.354 231.631C512.97 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-102.556 0-192.091-54.701-240-136 44.157-74.933 123.677-127.27 216.162-135.007C273.958 131.078 280 144.83 280 160c0 30.928-25.072 56-56 56s-56-25.072-56-56l.001-.042C157.794 179.043 152 200.844 152 224c0 75.111 60.889 136 136 136s136-60.889 136-136c0-31.031-10.4-59.629-27.895-82.515C451.704 164.638 498.009 205.106 528 256c-47.908 81.299-137.444 136-240 136z"/></svg>
+                            </a>
+                        </div>
+                        <p>As we enter <span class="emph__orange">1994</span>, we watch Mosaic create a massive spike in the number of Internet users. The layman can now access the Interwebz from their home or office PCs, which were also becoming more mainstream literally by the month. Given we know the future, we may hesitate to call Mosaic mainstream; rather a launching pad for what's to come.</p>
+                        <div class="inline">
+                            <ul>
+                                <li>Here's what it looked like:
+                                    <a class="icon" href="https://www.ncsa.illinois.edu/wp-content/uploads/2021/10/mosaic.1.0.2-2048x1910.jpg" data-featherlight="image">
+                                        <svg id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.354 231.631C512.97 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-102.556 0-192.091-54.701-240-136 44.157-74.933 123.677-127.27 216.162-135.007C273.958 131.078 280 144.83 280 160c0 30.928-25.072 56-56 56s-56-25.072-56-56l.001-.042C157.794 179.043 152 200.844 152 224c0 75.111 60.889 136 136 136s136-60.889 136-136c0-31.031-10.4-59.629-27.895-82.515C451.704 164.638 498.009 205.106 528 256c-47.908 81.299-137.444 136-240 136z"/></svg>
+                                    </a>
+                                </li>
+                                <li>And if you're using Windows, you can install v1.0 & experiece the sexy firsthand:
+                                    <a class="icon" href="https://winworldpc.com/download/4547c2b7-6418-c39a-11c3-a4e284a2c3a5" target="_blank">
+                                        <svg id="link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>What makes Mosaic especially tasty? Two (2) main things:</p>
+                        <ol>
+                            <li>It's so <span class="emph__hot-pink">easy to start</span> - difficulty launching apps is apparently a thing - even doctors can do it.</li>
+                            <li><span class="emph__hot-pink">Pictures</span>. Images were displayed alongside text as they would be in magazines. Wasn't really a thing before now.</li>
+                        </ol>
+                        <p>Late in the year, Mosaic rebrands to Netscape & hits the ground running with Netscape Navigator. It boasts custom fonts, background colors, & embedded media. It's cross-platform (Apple Macintosh, Windows 3.1, Linux, Solaris, et al.), promises encryption & server authentication, offers proprietary online services, & even raises your children for you. By <span class="emph__orange">1995</span>, less than 2 years after it's beta release, Netscape goes public & earns an IPO value of $2.9 billion in U.S. currency, & has successfully created its own market. They were so successful that engineers from Microsoft visited Netscape's offices to "get a lay of the land" before they assess their own plans for breaking into a clearly lucrative market.</p>
+                        <div class="inline">
+                            <ul>
+                                <li>Netscape Navigator 2.01 in all it's glory:
+                                    <a class="icon" href="https://www.webdesignmuseum.org/uploaded/old-software/web-browsers/netscape-navigator/netscape-navigator-2-01-01.png" data-featherlight="image">
+                                        <svg id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.354 231.631C512.97 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-102.556 0-192.091-54.701-240-136 44.157-74.933 123.677-127.27 216.162-135.007C273.958 131.078 280 144.83 280 160c0 30.928-25.072 56-56 56s-56-25.072-56-56l.001-.042C157.794 179.043 152 200.844 152 224c0 75.111 60.889 136 136 136s136-60.889 136-136c0-31.031-10.4-59.629-27.895-82.515C451.704 164.638 498.009 205.106 528 256c-47.908 81.299-137.444 136-240 136z"/></svg>
+                                    </a>
+                                    <a class="icon" href="https://www.webdesignmuseum.org/uploaded/old-software/web-browsers/netscape-navigator/netscape-navigator-2-01-08.png" data-featherlight="image">
+                                        <svg id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.354 231.631C512.97 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-102.556 0-192.091-54.701-240-136 44.157-74.933 123.677-127.27 216.162-135.007C273.958 131.078 280 144.83 280 160c0 30.928-25.072 56-56 56s-56-25.072-56-56l.001-.042C157.794 179.043 152 200.844 152 224c0 75.111 60.889 136 136 136s136-60.889 136-136c0-31.031-10.4-59.629-27.895-82.515C451.704 164.638 498.009 205.106 528 256c-47.908 81.299-137.444 136-240 136z"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section3" id="section3">
+                    <div class="section-content">
+                        <h2>INTERNET EXPLORER</h2>
+                        <div class="divider">
+                            <div class="divider__wrapper">
+                                <div class="line short"></div>
+                                <div class="line short"></div>
+                                <div class="line long"></div>
+                            </div>
+                            <div class="long"></div>
+                            <div class="angled-wrapper">
+                                <div class="angled"></div>
+                            </div>
+                            <div class="short"></div>
+                        </div>
+                        <h3><em>KNOCK KNOCK!</em><br>
+                            <span>- Who's there?</span><br>
+                            <em>Bill</em><br>
+                            <span>- Bill who?</span><br>
+                            <em>I WILL BLEED YOU & ERASE YOU FROM EXISTENCE</em>
+                        </h3>
+                        <p>It's <span class="emph__orange">1995</span> & the TCP/IP soup is beginning to simmer. Netscape has 80% of the market share thanks to Navigator, & is rolling out silly things like HTML frames, image maps, cookies, & even the first iteration of Javascript. It's so popular "Net-scaping" is used interchangably with "surfing the web".</p>
+                        <div class="inline">
+                            <p>Netscape Navigator 2.0 for Mac (1995):
+                                <a class="icon" href="https://www.versionmuseum.com/images/applications/netscape-browser/webp/netscape-browser%5E1995%5Enetscape-navigator-2.0-mac.webp" data-featherlight="image">
+                                    <svg id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.354 231.631C512.97 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-102.556 0-192.091-54.701-240-136 44.157-74.933 123.677-127.27 216.162-135.007C273.958 131.078 280 144.83 280 160c0 30.928-25.072 56-56 56s-56-25.072-56-56l.001-.042C157.794 179.043 152 200.844 152 224c0 75.111 60.889 136 136 136s136-60.889 136-136c0-31.031-10.4-59.629-27.895-82.515C451.704 164.638 498.009 205.106 528 256c-47.908 81.299-137.444 136-240 136z"/></svg>
+                                </a>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="http://www.quickmeme.com/img/60/60a6b6630c65581e87b0f5a45b1f96064374a1640bdef125b581b6a130fd7736.jpg" class="img__right">
+                            <p>Then there's Microsoft, aggresively run by Bill Gates, who's been dutifully ignoring the Internet to this point & thus have no footing in a growing market overlapping his own. Once Netscape released their IPO, Gates reacts with an about-face after his engineers visit with Netscape. Microsoft has officially claimed the meeting was simply "a laidback exchange of ideas". Netscape accounts pretty much the opposite, going on-record to say Microsoft offered them a one-time $1,000,000 for unlimited access to their products & codebase, or would face retaliation.</p>
+                            <p>Netscape lawyers up; Microsoft bullies up, restructuring the vision & roadmap of Microsoft to be extricably connected to the Internet using Netscape's business model & superior resources. Months later, Internet Explorer (IE) is born.</p>
+                            <p>Perhaps unironically, v1 code of IE is licensed from Spyglass Mosaic, an original fork of Netscape's early work. IE v1 sucks. Hard.  IE v2 is released in October, still lacking features, but leagues improved over its predecessor with changes like HTML table support, SSL, cookies, VRML, & newsgroups.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section4" id="section4">
+                    <div class="section-content">
+                        <div>
+                            <h2>BROWSER</h2>
+                            <div class="browser-wars">
+                                <div class="slash"></div>
+                                <svg class="star-wars" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" id="Layer_1" x="0px" y="0px" width="534.104" height="171.366" viewBox="0 0 634.10401 271.366" enable-background="new 0 0 693.615 419.375" xml:space="preserve" inkscape:version="0.48.4 r9939" sodipodi:docname="Star_Wars_Logo.svg"><metadata id="metadata35"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><dc:title/></cc:Work></rdf:RDF></metadata><defs id="defs33"/><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1280" inkscape:window-height="962" id="namedview31" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="1.5916752" inkscape:cx="442.43711" inkscape:cy="139.56537" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="Layer_1"/>
+
+                                    <g id="Layer_2" transform="translate(-29.908,-73.916003)">
+                                        <g id="g7">
+                                            <path d="m 148.718,221.207 8.67,25.461 c 4.691,13.768 8.879,24.779 9.425,24.779 0.009,0 0.017,-0.004 0.024,-0.01 0.6,-0.53 17.57,-49.811 17.57,-49.811 h 32.89 l -39.68,115.619 h -22.86 c 0,0 -24.4,-70.471 -24.3,-70.739 l -25.47,69.851 h -22.63 l -39.18,-115.15 32.73,0.021 c 0,0 17.929,50.821 18.168,50.821 10e-4,0 10e-4,-10e-4 0.002,-0.002 l 17.89,-50.841 h 36.751 M 32.003,213.2 l 3.601,10.584 39.18,115.149 1.845,5.424 h 5.729 22.63 5.598 l 1.918,-5.26 17.685,-48.5 c 1.524,4.434 3.171,9.213 4.818,13.988 6.089,17.655 12.191,35.277 12.191,35.277 l 1.864,5.383 h 5.696 22.86 5.712 l 1.854,-5.403 39.68,-115.618 3.637,-10.598 h -11.204 -32.89 -5.706 l -1.858,5.396 c -2.974,8.635 -6.921,20.031 -10.296,29.676 -0.509,-1.463 -1.039,-3.001 -1.587,-4.611 l -8.669,-25.46 -1.846,-5.421 h -5.727 -36.75 -5.666 l -1.881,5.345 -10.453,29.706 C 90.515,238.551 86.512,227.24 83.452,218.566 l -1.882,-5.334 -5.657,-0.004 -32.73,-0.021 -11.18,-0.007 0,0 z" id="path9" inkscape:connector-curvature="0" style="fill:#ffe81f"/>
+                                        </g>
+                                        <g id="g11">
+                                            <path d="m 655.258,220.758 -0.075,30.305 c 0,0 -32.643,-0.109 -49.239,-0.109 -5.521,0 -9.266,0.013 -9.444,0.045 -2.86,0.521 -4.681,6.602 -3.87,9.271 0.399,1.35 3.391,5.76 6.63,9.81 3.229,4.051 8.54,10.681 11.78,14.729 8.319,10.381 9.46,12.43 10.229,18.391 1.25,9.681 -3.329,20.16 -11.829,27.07 -8.518,6.93 -8.145,6.979 -71.383,6.979 -0.916,0 -1.835,0 -2.777,0 -38.46,-0.01 -58.8,-0.329 -61.761,-0.989 -5.26,-1.19 -13.64,-8.03 -35.79,-29.28 -7.967,-7.636 -15.309,-14.322 -15.686,-14.324 -0.01,0 -0.015,0.006 -0.015,0.016 l -0.261,44.579 -35.899,-0.159 -0.221,-114.98 h 45.271 34.79 c 24.13,0.871 40.46,24.91 37.21,40.24 -0.74,3.479 -2.62,8.521 -4.181,11.2 -3.21,5.5 -11.38,12.56 -18.011,15.591 -2.449,1.108 -4.449,2.398 -4.449,2.858 0,1.71 8.061,9.649 11.08,10.91 2.579,1.079 10.09,1.319 43.21,1.319 3.882,0 7.408,0.002 10.608,0.002 33.293,0 31.618,-0.24 34.19,-5.741 1.801,-3.83 0.431,-6.12 -12.239,-20.39 -16.051,-15.971 -14.37,-23.621 -14.48,-29.271 -0.229,-6.77 5.102,-28.069 32.812,-28.069 l 73.8,-0.003 m -215.07,53.12 c 15.37,0 18.49,-0.239 21.761,-1.66 11.04,-4.8 11.63,-18.979 1.04,-25.271 -2.319,-1.381 -5.3,-1.609 -21.96,-1.7 l -19.279,-0.101 c 0.159,0.15 -0.061,27.57 -0.061,27.57 0,0 4.829,1.162 18.499,1.162 m 223.089,-61.12 h -8.021 -73.8 c -16.032,0 -25.515,6.328 -30.646,11.637 -8.347,8.633 -10.313,19.504 -10.162,24.629 0.008,0.427 0.003,0.865 -0.002,1.322 -0.073,8.329 1.154,17.758 16.659,33.246 3.065,3.452 8.193,9.239 10.131,12.115 -4.238,0.521 -14.98,0.521 -26.262,0.521 h -4.792 l -5.816,-0.002 c -19.904,0 -36.688,-0.057 -40.128,-0.736 -0.481,-0.314 -1.156,-0.854 -1.898,-1.498 6.877,-4.235 13.83,-10.799 17.104,-16.412 1.987,-3.413 4.178,-9.243 5.098,-13.568 2.04,-9.625 -1.325,-21.236 -9.001,-31.068 -8.956,-11.471 -21.985,-18.334 -35.746,-18.83 l -0.145,-0.006 h -0.145 -34.79 -45.271 -8.016 l 0.016,8.017 0.221,114.979 0.016,7.949 7.949,0.035 35.899,0.159 7.988,0.035 0.047,-7.988 0.155,-26.706 c 0.733,0.696 1.491,1.419 2.269,2.165 24.227,23.24 32.359,29.679 39.562,31.308 1.979,0.441 5.253,1.172 63.523,1.188 h 2.779 c 31.546,0 47.38,0 56.799,-0.91 10.789,-1.043 14.259,-3.49 19.461,-7.725 l 0.173,-0.141 c 10.685,-8.687 16.323,-21.83 14.715,-34.3 -1.048,-8.11 -3.194,-11.479 -11.922,-22.368 l -2.594,-3.24 c -3.04,-3.799 -6.713,-8.387 -9.175,-11.475 -1.986,-2.484 -3.546,-4.689 -4.487,-6.133 1.236,-0.003 2.841,-0.005 4.918,-0.005 16.395,0 48.887,0.108 49.213,0.11 l 8.008,0.026 0.02,-8.008 0.075,-30.306 0.021,-8.016 0,0 z m -233.538,52.828 c 0.013,-2.021 0.025,-4.287 0.038,-6.557 0.01,-2 0.019,-4.004 0.022,-5.84 l 11.187,0.058 c 6.429,0.035 16.103,0.088 17.989,0.623 2.407,1.461 3.75,3.72 3.604,6.06 -0.08,1.264 -0.682,3.588 -3.821,4.951 -1.75,0.76 -4.54,0.997 -18.57,0.997 -4.45,0 -7.883,-0.129 -10.449,-0.292 l 0,0 z" id="path13" inkscape:connector-curvature="0" style="fill:#ffe81f"/>
+                                        </g>
+                                        <g id="g15">
+                                            <path d="m 312.908,220.287 40.29,115.92 -32.83,0.15 -5.45,-17.41 -58.7,-0.471 -5.18,17.431 -32.5,-0.341 39.78,-115.229 54.59,-0.05 m -26.401,16.996 c -0.083,0.333 -5.144,14.219 -10.222,28.104 -5.12,14 -10.257,28 -10.328,28.109 0,0.001 -10e-4,0.001 0,0.001 l 0,0 c 0,0 0,0 0,-0.001 0.136,-0.04 18.316,-0.08 29.968,-0.08 5.453,0 9.475,0.009 9.55,0.029 10e-4,0.004 10e-4,0.005 10e-4,0.005 0,0 0,-10e-4 0,-0.003 0,0 0,0 -10e-4,-0.002 -0.204,-0.529 -18.909,-55.486 -18.968,-56.162 10e-4,-0.004 10e-4,-0.006 10e-4,-0.006 l 0,0 c -10e-4,0 -10e-4,0.002 -10e-4,0.006 m 32.088,-25.001 -5.693,0.005 -54.59,0.051 -5.696,0.005 -1.859,5.386 -39.78,115.229 -3.623,10.494 11.102,0.115 32.5,0.341 6.033,0.063 1.719,-5.782 3.466,-11.662 46.854,0.375 3.708,11.848 1.765,5.638 5.907,-0.026 32.829,-0.15 11.195,-0.052 -3.676,-10.574 -40.29,-115.92 -1.871,-5.384 0,0 z m -41.123,73.142 c 1.515,-4.129 3.556,-9.71 6.327,-17.289 0.869,-2.376 1.664,-4.551 2.393,-6.545 0.663,1.956 1.385,4.084 2.169,6.398 0.646,1.906 3.485,10.27 5.92,17.428 -7.24,0 -12.69,10e-4 -16.809,0.008 l 0,0 z" id="path17" inkscape:connector-curvature="0" style="fill:#ffe81f"/>
+                                        </g>
+                                        <g id="g19">
+                                            <path d="m 326.488,81.928 v 28.6 h -57.28 v 87.47 h -34.15 v -87.54 l -66.86,0.19 c -8.06,0 -9.14,6.42 -9.14,8.88 0,3.02 1.97,6.04 12.79,19.74 7.02,8.9 13.47,17.78 14.32,19.72 4.64,10.68 -1.36,27.32 -12.29,34.08 -7.79,4.813 -6.459,4.931 -64.308,4.931 -2.974,0 -6.096,0 -9.392,0 h -62.27 v -32.13 h 97.9 l 2.89,-2.01 c 1.95,-1.36 3.08,-3.23 3.51,-5.79 0.6,-3.68 0.29,-4.16 -11.8,-17.78 -14.29,-16.1 -15.8,-19.04 -15.06,-29.32 0.84,-11.73 11.3,-28.77 29.58,-28.77 l 181.56,-0.271 m 8,-8.012 -8.013,0.012 -181.56,0.27 c -10.458,0 -20.171,4.518 -27.342,12.722 -5.814,6.652 -9.63,15.429 -10.206,23.477 -0.973,13.511 2.137,18.393 17.056,35.202 4.33,4.877 8.447,9.516 9.821,11.486 -0.022,0.079 -0.042,0.13 -0.054,0.159 -0.015,0.012 -0.038,0.03 -0.07,0.052 l -0.822,0.572 h -95.39 -8 v 8 32.13 8 h 8 62.27 4.937 4.455 c 28.522,0 42.6,-0.027 50.894,-0.635 9.49,-0.695 12.518,-2.323 17.054,-5.14 l 0.566,-0.351 c 14.262,-8.821 21.612,-29.827 15.422,-44.074 -1.91,-4.358 -14.003,-19.746 -15.376,-21.486 -3.796,-4.807 -10.062,-12.74 -11.054,-15.036 0.024,-0.193 0.071,-0.393 0.121,-0.532 0.165,-0.042 0.481,-0.098 1.001,-0.098 l 58.86,-0.167 v 79.517 8 h 8 34.15 8 v -8 -79.47 h 49.28 8 v -8 -28.6 -8.01 l 0,0 z" id="path21" inkscape:connector-curvature="0" style="fill:#ffe81f"/>
+                                        </g>
+                                        <g id="g23">
+                                            <path d="m 419.548,82.857 40.18,116.22 -32.77,-0.18 -5.32,-17.41 -58.439,-0.26 -5.221,16.77 h -33.369 l 39.739,-115.14 h 55.2 m -46.811,73.621 39.801,-0.05 c 10e-4,0 10e-4,0.001 10e-4,0.001 0.136,0 -19.342,-57.201 -19.472,-57.241 l 0,0 c -0.142,-0.005 -20.779,57.29 -20.33,57.29 m 52.51,-81.621 h -5.699 -55.2 -5.701 l -1.86,5.39 -39.74,115.141 -3.662,10.61 h 11.225 33.37 5.889 l 1.75,-5.623 3.461,-11.121 46.632,0.207 3.599,11.774 1.721,5.629 5.887,0.033 32.77,0.18 11.297,0.062 -3.691,-10.676 -40.18,-116.22 -1.868,-5.386 0,0 z m -41.396,73.607 c 2.468,-7.027 5.904,-16.657 9.014,-25.312 2.948,8.644 6.209,18.245 8.588,25.29 l -17.602,0.022 0,0 z" id="path25" inkscape:connector-curvature="0" style="fill:#ffe81f"/>
+                                        </g>
+                                        <g id="g27">
+                                            <path d="m 532.396,82.857 c 25.921,0 43.91,0.37 47.37,0.97 8,1.39 15.23,5.66 20.65,12.22 5.67,6.86 6.97,10.14 7.71,19.54 1.061,13.27 -5.25,24.72 -17.7,32.15 -3.63,2.17 -7.359,4.28 -8.29,4.7 -1.43,0.65 -1.239,1.27 1.32,4.27 1.649,1.93 4.51,4.68 6.35,6.11 l 3.36,2.61 62.08,0.89 0.609,31.68 h -38.061 c -29.439,0 -38.86,-0.27 -41.62,-1.2 -4.13,-1.4 -14.069,-9.82 -34.271,-29.04 l -14.42,-13.72 0.152,43.96 H 490.592 V 82.857 h 41.804 m -5.458,51.77 h 19.671 c 19.141,0 19.739,-0.06 22.47,-2.11 4.881,-3.66 6.609,-7.43 6.091,-13.22 -0.53,-5.97 -2.83,-9.08 -8.601,-11.58 -3.25,-1.42 -6.381,-1.65 -21.721,-1.65 h -17.91 v 28.56 m 5.458,-59.77 h -41.8 -8 v 8 115.14 8 h 8 37.043 8.028 l -0.028,-8.028 -0.088,-25.216 0.84,0.799 c 24.986,23.773 32.356,29.173 37.218,30.821 3.733,1.259 9.982,1.624 44.188,1.624 h 38.061 8.154 l -0.156,-8.154 -0.609,-31.68 -0.148,-7.734 -7.734,-0.111 -59.402,-0.851 -1.245,-0.967 c -0.396,-0.309 -0.876,-0.717 -1.389,-1.179 0.446,-0.264 0.854,-0.507 1.207,-0.717 15.003,-8.953 22.866,-23.407 21.569,-39.653 -0.863,-10.959 -2.82,-15.896 -9.52,-24 -6.584,-7.969 -15.621,-13.298 -25.447,-15.005 -5.46,-0.947 -32.881,-1.089 -48.742,-1.089 l 0,0 z m 2.542,39.21 h 9.91 c 14.027,0 16.806,0.233 18.518,0.981 3.25,1.408 3.58,2.091 3.835,4.957 0.256,2.848 -0.097,3.994 -2.922,6.112 -0.093,0.069 -0.164,0.123 -0.223,0.166 -1.865,0.345 -8.786,0.345 -17.447,0.345 h -11.67 l -10e-4,-12.561 0,0 z" id="path29" inkscape:connector-curvature="0" style="fill:#ffe81f"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="divider">
+                            <div class="divider__wrapper">
+                                <div class="line short"></div>
+                                <div class="line short"></div>
+                                <div class="line long"></div>
+                            </div>
+                            <div class="long"></div>
+                            <div class="angled-wrapper">
+                                <div class="angled"></div>
+                            </div>
+                            <div class="short"></div>
+                        </div>
+                        <p>On December 7th of 1995, Bill Gates unironically holds a press conference saying "I'mma kilt Netscape dead," or something to that effect. Unfortunately, he's done it before, so to WWWar we go!</p>
+                        <a class="btn lighter" href="#" data-featherlight="#warTimeline">FIGHT!</a>
+                        <div id="warTimeline">
+                            <div>
+                                <img src="https://miro.medium.com/v2/resize:fit:4800/0*t1iDCj-iBzDQ5_pY">
+                                <ul class="accordion">
+                                    <li class="set">
+                                        <a class="link">1995<i class="fa fa-chevron-down"></i></a>
+                                        <ul class="content">
+                                            <li>Microsoft visits/chills/threats Netscape</li>
+                                            <li>Microsoft announces Internet Explorer</li>
+                                            <li>Netscape releases update (v1.22) & IPO; makes boo-koos.</li>
+                                            <ul>
+                                                <li>15 days later, Microsoft releases IE v1.</li>
+                                            </ul>
+                                            <li>Netscape continues to wipe the floor with IE.</li>
+                                            <li>Microsoft releases IE v2, boosted by sales of Windows 95.</li>
+                                            <li>Microsoft wages war on all competition on the 7th so they can be king of jungle.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="set">
+                                        <a class="link">1996<i class="fa fa-chevron-down"></i></a>
+                                        <ul class="content">
+                                            <li>Netscape & Microsoft release new updates months apart, adding features & plugins, effectively creating bloatware & slowing down their products, but who cares! It's war!</li>
+                                            <li>Opera is launched, but one one cares.</li>
+                                            <li>Netscape ramps up is features in v3 with spiffy wizardry like tables, frames, form autofilling, & advanced Javascript.</li>
+                                            <li>Netscape officially peaks with a browsershare of 90%.</li>
+                                            <li>Microsoft adopts Active X, frames, & reverse-engineers Javascript with "JScript". So original!</li>
+                                            <li>IE v3 is released for FREE bundled with Windows 95.</li>
+                                            <li>CSS is released with limited implementation for several years.</li>
+                                            <ul>
+                                                <li>IE welcomes it, surprisingly</li>
+                                                <li>Netscape is slow to adopt it, giving us developer blue balls</li>
+                                                <li>Users get their first tastes of unrendered banners with text like "Best displayed on Netscape", or "Best displayed on Internet Explorer". Everyone loves it.</li>
+                                            </ul>
+                                        </ul>
+                                    </li>
+                                    <li class="set">
+                                        <a class="link">1997<i class="fa fa-chevron-down"></i></a>
+                                        <ul class="content">
+                                            <li>Netscape & IE both release v4.</li>
+                                            <li>Market shares begin to change as Windows grows in popularity with the PC market, & thus IE by (free) extension.</li>
+                                            <li>Netscape holds 72% of the market; Microsoft has 18%.</li>
+                                            <li>Microsoft dumps crazy money into distributing & pushing IE.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="set">
+                                        <a class="link">1998<i class="fa fa-chevron-down"></i></a>
+                                        <ul class="content">
+                                            <li>Netscape goes open-source, now free for all.</li>
+                                            <li>Microsoft captures 50% of the market.</li>
+                                            <li>AOL purchases Netscape for $4.2 billion.</li>
+                                            <li>Microsoft goes on trial for antitrust violations.</li>
+                                            <li>BONUS:  CSS2 is released, & developers finally take note.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="set">
+                                        <a class="link">1999<i class="fa fa-chevron-down"></i></a>
+                                        <ul class="content">
+                                            <li>Microsoft captures just shy of 80% of the market.</li>
+                                            <li>Microsoft's antitrust case continues</li>
+                                        </ul>
+                                    </li>
+                                    <li class="set">
+                                        <a class="link">2000<i class="fa fa-chevron-down"></i></a>
+                                        <ul class="content">
+                                            <li>Microsoft's loses its antitrust case, but is eventually overturned by an appeals court.</li>
+                                            <li>Bill Gates finds some humility.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="set">
+                                        <a class="link">2001<i class="fa fa-chevron-down"></i></a>
+                                        <ul class="content">
+                                            <li>The war's officially won by Microsoft when Netscape is discontinued, though support via AOL continues through 2008.</li>
+                                        </ul>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section5" id="section5">
+                    <div class="section-content">
+                        <h2>STANDARIZATION</h2>
+                        <div class="divider">
+                            <div class="divider__wrapper">
+                                <div class="line short"></div>
+                                <div class="line short"></div>
+                                <div class="line long"></div>
+                            </div>
+                            <div class="long"></div>
+                            <div class="angled-wrapper">
+                                <div class="angled"></div>
+                            </div>
+                            <div class="short"></div>
+                        </div>
+                        <p>These are the boring years, quite frankly. The Internet opens up to more of the world, culminating in 1,372,354,708 people online worldwide. Google watches, waits, & positions itself for the future. Internet Explorer plateaus & declines.</p>
+                        <p>Other stuff:</p>
+                        <ul>
+                            <li>Mozilla 1.0 is release, but goes largely unnoticed.</li>
+                            <li>Internet Explorer continues to dominate, reaching peak market share of 92% in 2004, & discontinues support for Macintosh.</li>
+                            <li>Apple offers Safari to the world in 2003. The world's unimpressed until 2005 when Safari receives an overhaul, & because Apple's sole endorsed & shipped browser.</li>
+                            <li>With Navigator long dead, Mozilla launches Firefox as the world's premiere open-source browser, gaining trackion quickly with those disillusioned with Microsoft, &/or seeking better privacy & security.</li>
+                            <li>Opera does some weird things as trialware, becoming ad-sponsored, then ditching it all after financial support from Google (foreshadowing) in 2005.</li>
+                            <li>Opera finds its stride in 2006 with fraud protection & enhanced security features</li>
+                            <li>W3C & other organizations work to develop web standards</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section section6" id="section6">
+                    <div class="section-content">
+                        <h2>GOING MOBILE & THE LAUNCH OF CHROME</h2>
+                        <div class="divider">
+                            <div class="divider__wrapper">
+                                <div class="line short"></div>
+                                <div class="line short"></div>
+                                <div class="line long"></div>
+                            </div>
+                            <div class="long"></div>
+                            <div class="angled-wrapper">
+                                <div class="angled"></div>
+                            </div>
+                            <div class="short"></div>
+                        </div>
+                        <p>It's <span class="emph__orange">2007</span>, & Steve Jobs is excited. After 3 years of development, iPhone is released, & with it Safari 3 for both OSX & iOS. It's even ported to Windows for some reason. While Palm Pilots & Windows Mobile phones have been on the fringe of the consumer sphere for several years, none have the impace of iPhone with it's big, sexy 3.75" screen & multi-touch gestures. Browsers on these smartphone precursors were typically built into the operating system.</p>
+                        <p>Motorola, Samsung, & Asus aren't far behind, all sporting their own native browsers. But who cares? <span class="emph__orange">2008</span>'s here!</p>
+                        <h3>Enter GOOGLE</h4>
+                        <p>Rmember when they were just a search engine that <em>wasn't</em> Yahoo!? September of 2008 is a turning point for Google, & arguably the direction of how we use the internet. While Apple continues to revel in the success of iPhone, iPhone, iChargeTooMuch, etc., Google makes this September one to remember. (Really hard not to make a Guy Fawkes joke here.)</p>
+                        <div class="inline">
+                            <ul>
+                                <li>Lightbox item:
+                                    <a class="icon" href="https://www.ncsa.illinois.edu/wp-content/uploads/2021/10/mosaic.1.0.2-2048x1910.jpg" data-featherlight="image">
+                                        <svg id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.354 231.631C512.97 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-102.556 0-192.091-54.701-240-136 44.157-74.933 123.677-127.27 216.162-135.007C273.958 131.078 280 144.83 280 160c0 30.928-25.072 56-56 56s-56-25.072-56-56l.001-.042C157.794 179.043 152 200.844 152 224c0 75.111 60.889 136 136 136s136-60.889 136-136c0-31.031-10.4-59.629-27.895-82.515C451.704 164.638 498.009 205.106 528 256c-47.908 81.299-137.444 136-240 136z"/></svg>
+                                    </a>
+                                </li>
+                                <li>Link item:
+                                    <a class="icon" href="https://winworldpc.com/download/4547c2b7-6418-c39a-11c3-a4e284a2c3a5" target="_blank">
+                                        <svg id="link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section7" id="section7">
+                    <div class="section-content">
+                        <h2>TITLE</h2>
+                        <div class="divider">
+                            <div class="divider__wrapper">
+                                <div class="line short"></div>
+                                <div class="line short"></div>
+                                <div class="line long"></div>
+                            </div>
+                            <div class="long"></div>
+                            <div class="angled-wrapper">
+                                <div class="angled"></div>
+                            </div>
+                            <div class="short"></div>
+                        </div>
+                        <p>Lorem ipsum...</p>
+                        <div class="inline">
+                            <ul>
+                                <li>Lightbox item:
+                                    <a class="icon" href="https://www.ncsa.illinois.edu/wp-content/uploads/2021/10/mosaic.1.0.2-2048x1910.jpg" data-featherlight="image">
+                                        <svg id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.354 231.631C512.97 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-102.556 0-192.091-54.701-240-136 44.157-74.933 123.677-127.27 216.162-135.007C273.958 131.078 280 144.83 280 160c0 30.928-25.072 56-56 56s-56-25.072-56-56l.001-.042C157.794 179.043 152 200.844 152 224c0 75.111 60.889 136 136 136s136-60.889 136-136c0-31.031-10.4-59.629-27.895-82.515C451.704 164.638 498.009 205.106 528 256c-47.908 81.299-137.444 136-240 136z"/></svg>
+                                    </a>
+                                </li>
+                                <li>Link item:
+                                    <a class="icon" href="https://winworldpc.com/download/4547c2b7-6418-c39a-11c3-a4e284a2c3a5" target="_blank">
+                                        <svg id="link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section section8" id="section8">
+                    <div class="section-content">
+                        <h2>TITLE</h2>
+                        <div class="divider">
+                            <div class="divider__wrapper">
+                                <div class="line short"></div>
+                                <div class="line short"></div>
+                                <div class="line long"></div>
+                            </div>
+                            <div class="long"></div>
+                            <div class="angled-wrapper">
+                                <div class="angled"></div>
+                            </div>
+                            <div class="short"></div>
+                        </div>
+                        <p>Lorem ipsum...</p>
+                        <div class="inline">
+                            <ul>
+                                <li>Lightbox item:
+                                    <a class="icon" href="https://www.ncsa.illinois.edu/wp-content/uploads/2021/10/mosaic.1.0.2-2048x1910.jpg" data-featherlight="image">
+                                        <svg id="eye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.354 231.631C512.97 135.949 407.81 72 288 72 168.14 72 63.004 135.994 6.646 231.631a47.999 47.999 0 0 0 0 48.739C63.031 376.051 168.19 440 288 440c119.86 0 224.996-63.994 281.354-159.631a47.997 47.997 0 0 0 0-48.738zM288 392c-102.556 0-192.091-54.701-240-136 44.157-74.933 123.677-127.27 216.162-135.007C273.958 131.078 280 144.83 280 160c0 30.928-25.072 56-56 56s-56-25.072-56-56l.001-.042C157.794 179.043 152 200.844 152 224c0 75.111 60.889 136 136 136s136-60.889 136-136c0-31.031-10.4-59.629-27.895-82.515C451.704 164.638 498.009 205.106 528 256c-47.908 81.299-137.444 136-240 136z"/></svg>
+                                    </a>
+                                </li>
+                                <li>Link item:
+                                    <a class="icon" href="https://winworldpc.com/download/4547c2b7-6418-c39a-11c3-a4e284a2c3a5" target="_blank">
+                                        <svg id="link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/smooth-scrolling.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/bits.js"></script>
+        <script src="js/os-terminal.js"></script>
+        
+    </body>
+
+</html>
