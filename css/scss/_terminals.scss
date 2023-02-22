@@ -2,9 +2,8 @@
 .os-terminal-wrapper {
   min-height: 100vh;
   background-color: $black;
-  font-size: 1em;
-  font-family: 'Courier New', monospace;
-  color: $white;
+  position: relative;
+  z-index: 10;
 
   .os-terminal-content {
     min-height: 100vh;
@@ -26,6 +25,12 @@
     &.zoom {
       animation: fromTheStars 1s ease-out forwards;
       animation-delay: 2.5s;
+    }
+
+    p, input, textarea {
+      font-family: 'Courier New', monospace;
+      font-size: 1em;
+      color: $white;
     }
 
     // Animations
@@ -90,6 +95,9 @@
           top: 100px;
           right: 20px;
           width: 425px;
+          font-family: 'Courier New', monospace;
+          font-size: 1em;
+          color: $white;
 
           &.hidden {
             display: none;

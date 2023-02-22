@@ -31,7 +31,7 @@ function osTerminal() {
       // Animate the text in
       (function animateText() {
         str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(typing); 
-        let typing = setTimeout(animateText, 5);
+        let typing = setTimeout(animateText, 30);
         // Maintain focus on bottom of output
         el.scrollTop = el.scrollHeight;
       })();
@@ -53,7 +53,7 @@ function clearInput() {
     // Swim lessons
     if (event.target.value == "n" && event.key === "Enter") {
       let dramaticPause = setTimeout(function () {
-        window.location.href = "https://www.realultimatepower.net/";
+        window.location.href = "https://www.spokanecounty.org/1661/Swimming-Lessons";
         window.clearTimeout(dramaticPause);
       }, 3000);
     }
@@ -71,10 +71,11 @@ function clearInput() {
     } else if (event.target.value == "no roads" && event.key === "Enter") {
       $('.os-terminal-content').addClass('zoom');
       $('#warpSpeed').addClass('drive');
-      /*let exitDelay = setTimeout(function () {
-        window.location.href = "https://SITEX3.com";
-        window.clearTimeout(exitDelay);
-      }, 5000);*/
+      let exitDelay = setTimeout(function () {
+        $('.os-terminal-wrapper').fadeOut(800, function() {
+          $(this).remove();
+        })
+      }, 5000);
     } else if (event.key === "Enter") {
       clearInput();
     }

@@ -52,10 +52,10 @@ $(document).ready(function() {
         $('.hit-counter span').text('1,372,354,708');  
       }
       else if (scrollPos >= section6 && scrollPos < section7) {
-        $('.hit-counter span').text('7');  
+        $('.hit-counter span').text('3,004,713,178');  
       }
       else if (scrollPos >= section7 && scrollPos < section8) {
-        $('.hit-counter span').text('8');  
+        $('.hit-counter span').text('5,300,127,092+');  
       }
       else {
         $('.hit-counter span').text('');  
@@ -89,12 +89,12 @@ $(document).ready(function() {
 2012 = 2,426,962,781
 2013 = 2,598,722,381
 2014 = 2,793,785,954
-2015 = 3,004,713,178
+2015 = 3,004,713,178 <- 7
 2016 = 3,256,356,360
 2017 = 3,483,895,373
 2018 = 3,795,523,228
 2019 = 4,194,082,864
 2020 = 4,699,887,523
 2021 = 4,901,344,780
-2022 = 5,300,127,092
+2022 = 5,300,127,092 <- 8
 */

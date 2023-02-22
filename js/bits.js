@@ -4,15 +4,15 @@ const eventButton = document.querySelector('#eventButton');
 eventButton.addEventListener('click', printItem);
 
 const listItems = [
-  'Bill Clinton becomes President; Monica Lewinsky begins college in Portland',
-  'The U.S. & Russia got along for a few minutes (START II)',
-  'The Waco seige happened & I\'m sure everyone was okay',
-  'NASA actually had funding for a plethora of missions',
-  'A lot of earthquakes kill a lot of people',
-  'Beanie Babies are launched; people don\'t care yet',
-  'The Maascrict Treaty establishes the EU; England\'s already grumpy',
-  'A few other things happened too'
-  ];
+    'Bill Clinton becomes President; Monica Lewinsky begins college in Portland.',
+    'The U.S. & Russia got along for a few minutes (START II).',
+    'The Waco seige happened & I\'m sure everyone was okay.',
+    'NASA actually had funding for a plethora of missions.',
+    'A lot of earthquakes kill a lot of people.',
+    'Beanie Babies are launched; people don\'t care yet.',
+    'The Maastricht Treaty establishes the EU; England\'s already grumpy.',
+    'A few other things happened too.'
+];
 
 i = 0;
 function printItem() {
@@ -33,6 +33,7 @@ $(document).ready(function () {
             $("#eventButton").hide();
             $("#startThings").show();
             $("body").css('overflow','visible');
+            $(".timeline-container").css('display','block');
         } else count++
     });
 });
